@@ -1,0 +1,37 @@
+.container{
+    background: #d2d3d6;
+    display: flex;
+
+}
+  
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    background: rgba(0,0,0,0.4);
+  }
+  
+  .error {
+    font-size: 14px;
+    text-align: center;
+    color: red;
+  }
+  
+  .load-bar {
+    height: 20px;
+    width: 0px;
+    background: lime;
+    animation: grow 5s linear forwards;
+  }
+  
+  @keyframes grow {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 100%;
+    }
+  }
